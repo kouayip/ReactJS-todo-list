@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { TodoStoreContext } from "../../TodoStore";
 import "./TodoDetails.scss";
 
@@ -32,7 +32,7 @@ const TodoDetails = (props) => {
           </div>
         ) : (
           <div className="todoDetail card">
-            <h4>Acune correspondance</h4>
+            <h4>Aucune correspondance</h4>
           </div>
         );
       }}
