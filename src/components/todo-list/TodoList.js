@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import TodoElement from "./TodoElement/TodoElement";
 import { TodoStoreContext } from "../../TodoStore";
 import "./TodoList.scss";
 
-export default () => {
+const TodoList = () => {
   return (
     <TodoStoreContext.Consumer>
       {(context) => (
@@ -13,9 +13,7 @@ export default () => {
             {context.data.getTodos().map((t, index) => (
               <TodoElement
                 toggleTodo={(toggle) => {
-                  {
-                    context.toggleTodo(t.id, toggle);
-                  }
+                  context.toggleTodo(t.id, toggle);
                 }}
                 key={t.id + index}
                 todo={t}
@@ -32,3 +30,5 @@ export default () => {
     </TodoStoreContext.Consumer>
   );
 };
+
+export default TodoList;
