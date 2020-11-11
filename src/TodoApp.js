@@ -10,7 +10,7 @@ class TodoApp extends React.Component {
     super(props);
     this.data = new TodoStore();
     this.data.addTodo(
-      "Todo Reat.JS",
+      "Todo React.JS",
       "créer une application type CRUD avec React.JS!",
       true
     );
