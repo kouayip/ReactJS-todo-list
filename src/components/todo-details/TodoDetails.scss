@@ -1,0 +1,34 @@
+@mixin forme {
+  border-bottom: 1px solid var(--hr-color);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.todoDetail {
+  text-align: center;
+  &-title {
+    border-bottom: 1px solid var(--hr-color);
+    padding-bottom: 1rem;
+  }
+  &-body {
+    border-bottom: 1px solid var(--hr-color);
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  &-etat {
+    @include forme;
+  }
+
+  &-treatmentDate {
+    @include forme;
+  }
+
+  &-createDate {
+    @include forme;
+  }
+
+  &-updateDate {
+    @include forme;
+  }
+}

@@ -1,0 +1,19 @@
+@import "./scss/media-queries";
+
+.todo-title {
+  font-family: var(--font-family-Syne-mono);
+  font-size: 6rem;
+  white-space: nowrap;
+  @include xs {
+    font-size: 4rem;
+  }
+  @include sm {
+    font-size: 5rem;
+  }
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    transform: rotate(2deg);
+  }
+}

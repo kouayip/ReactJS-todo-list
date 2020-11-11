@@ -1,0 +1,35 @@
+.card {
+  margin-top: 2rem;
+  height: 100%;
+  width: 80%;
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: var(--box-shadow);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.03);
+  }
+
+  &-primary {
+    background: var(--primary);
+    color: white;
+  }
+}
+
+.isTreated {
+  text-decoration: line-through;
+  transition: all 0.3s ease-in-out;
+}

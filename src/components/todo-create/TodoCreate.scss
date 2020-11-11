@@ -1,0 +1,55 @@
+@import "../../scss/media-queries";
+
+.TodoCreate {
+  .form-group {
+    margin: 1rem 0;
+    display: flex;
+    flex: 1;
+    margin-bottom: 2rem;
+    flex-flow: column nowrap;
+    .form-label {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    & > input {
+      padding: 1rem;
+      @include xs {
+        padding: 0.5rem;
+      }
+      border: 1px solid black;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    & > textarea {
+      padding: 0.5rem;
+      border: 1px solid black;
+      border-radius: 2px;
+      max-width: 100%;
+      height: 20rem;
+      @include xs {
+        height: 10rem;
+      }
+      outline: none;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .form-action {
+    width: 80%;
+    display: flex;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+  .btn-primary {
+    flex: 1;
+    margin-top: 1rem;
+    font-size: 16px;
+    transition: all 0.2s ease-out;
+  }
+}

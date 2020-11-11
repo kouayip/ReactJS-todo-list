@@ -1,0 +1,11 @@
+.todoList {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.todoList-action {
+  margin-top: 4rem;
+  &-Add {
+    box-shadow: var(--box-shadow);
+  }
+}
